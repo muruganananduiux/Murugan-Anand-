@@ -287,26 +287,28 @@ body {
 .grid-column h3 {
     font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 25px;
-    border-bottom: 2px solid rgba(0, 188, 212, 0.3);
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 188, 212, 0.302);
     padding-bottom: 10px;
     letter-spacing: 1px;
 }
 
 /* --- Left Column: Skills & Languages --- */
 .skill-group {
-    margin-bottom: 50px; /* INCREASED margin at the bottom of each skill group */
+    margin-bottom: 50px; /* Increased margin at the bottom of each skill group */
 }
 
 .education-group {
-    /* Projects खत्म होने के बाद Education Group के ऊपर पर्याप्त जगह */
+    /* After projects, add enough space above Education Group */
     margin-top: 50px; 
 }
 
-/* Hobbies Group के नीचे भी मार्जिन बढ़ाएँ */
+/* Increase margin below the Hobbies Group */
 .hobbies-group {
     margin-bottom: 50px;
 }
+
+
 .personal-skills-list {
     display: block; 
     margin-top: 15px; /* Added space above the skill list */
@@ -314,7 +316,8 @@ body {
 
 .personal-skills-list span {
     display: block !important; 
-    /* Padding: ऊपर/नीचे 12px, दाएँ/बाएँ 0px */
+    
+    /* Padding: Top/Bottom 12px, Left/Right 0px */
     padding: 12px 0px; 
     font-size: 1.05rem;
     
@@ -384,6 +387,7 @@ body {
     .about-image { max-width: 80%; height: 400px; margin-top: 30px;}
     .grid-column { max-width: 100%; margin: 0;}
 }
+
 /* ---------------------------------- */
 /* --- 4. CONTACT SECTION STYLING --- */
 /* ---------------------------------- */
@@ -717,9 +721,14 @@ body {
     position: relative;
     width: 100px; 
     height: 6px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 188, 212, 0.3);
     border-radius: 3px;
     overflow: hidden;
     /* This transition is vital for the smooth filling effect */
     transition: width 1.5s ease-out; /* INCREASED time to 1.5s for a noticeable staggered effect */
+}
+/* Add spacing above section headings only */
+.grid-column h3 {
+    margin-top: 40px !important; /* Increase space above headings */
+    margin-bottom: 20px; /* Keep spacing below heading */
 }
