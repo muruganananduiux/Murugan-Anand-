@@ -281,3 +281,21 @@ window.addEventListener("load", () => {
 });
 
 
+/* MOBILE FADE-IN ON SCROLL */
+if (window.innerWidth <= 768) {
+  const items = document.querySelectorAll(".fade-mobile");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  items.forEach(item => observer.observe(item));
+}
+
