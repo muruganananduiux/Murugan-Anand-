@@ -250,3 +250,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+const nameText = "MURUGAN ANAND";
+const nameEl = document.querySelector(".full-name");
+
+let i = 0;
+nameEl.textContent = "";
+
+function typeName() {
+  if (i < nameText.length) {
+    nameEl.textContent += nameText.charAt(i);
+    i++;
+    setTimeout(typeName, 90);
+  }
+}
+
+window.addEventListener("load", typeName);
+
+
+window.addEventListener("load", () => {
+  const bg = document.querySelector(".background-overlay");
+
+  if (bg) {
+    // thoda delay for luxury feel
+    setTimeout(() => {
+      bg.style.opacity = "1";
+    }, 200);
+  }
+});
+
+
