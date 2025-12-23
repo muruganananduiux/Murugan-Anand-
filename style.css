@@ -68,8 +68,10 @@ body {
 /* -------------------------------- */
 /* --- 1. HERO SECTION STYLING --- */
 /* -------------------------------- */
+
 .hero-section {
     position: relative;
+     z-index: 2;
     height: 100vh; 
     display: flex;
     align-items: center;
@@ -78,20 +80,43 @@ body {
 }
 
 /* Hero Background Image URL */
+
 .background-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    background: 
-        url('bg.webp') no-repeat center center/cover; 
-    
-    background-size: cover;
-    z-index: -1; 
-    filter: brightness(0.7); 
+    inset: 0;
+
+    background: url('Bg.webp') no-repeat center center / cover;
+
+    z-index: 1;
+
+    /* START: image invisible */
+    opacity: 0;
+
+    /* smooth fade-in animation */
+    animation: bgFadeIn 2s ease forwards;
 }
+
+/* FADE IN KEYFRAMES */
+@keyframes bgFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 
 .hero-content {
     max-width: 800px;
@@ -242,14 +267,80 @@ body {
     height: 600px; 
     max-width: 40%; 
     background: 
-        linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%), 
+        linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 90%), 
         url('pf.jpg') no-repeat center center/cover; 
         
     background-size: cover;
     background-position: center top; 
     border-radius: 8px; 
-    filter: grayscale(100%) brightness(0.6); 
+    filter: grayscale(100%) brightness(0.8); 
     transition: filter 0.5s ease; 
+}
+@media (max-width: 768px) {
+
+  .about-section {
+    flex-direction: column;
+    padding: 60px 6% 80px;
+    min-height: auto;
+  }
+
+  /* IMAGE ON TOP */
+  .about-image {
+    width: 100%;
+    max-width: 100%;
+    height: 360px;
+    margin-bottom: 40px;
+
+    background-position: center top;
+    border-radius: 10px;
+  }
+
+  /* CONTENT BELOW IMAGE */
+  .about-content {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
+  .email-link {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .about-description p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .location-info,
+  .address-info {
+    font-size: 0.9rem;
+  }
+
+  /* COPYRIGHT NORMAL FLOW */
+  .copyright-info {
+    position: static;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .about-image {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
 }
 
 /* ----------------------------------- */
@@ -732,3 +823,74 @@ body {
     margin-top: 40px !important; /* Increase space above headings */
     margin-bottom: 20px; /* Keep spacing below heading */
 }
+
+
+
+/* ===============================
+   HERO – SMOOTH LUXURY ANIMATION
+================================ */
+
+/* BACKGROUND SOFT FADE */
+.background-overlay {
+  animation: bgFade 1.6s ease forwards;
+}
+
+@keyframes bgFade {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}
+
+/* COMMON FADE UP */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HELLO */
+.greeting {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* NAME – SLIDE UP */
+.full-name {
+  opacity: 0;
+  transform: translateY(35px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* SUBTITLE – DELAYED FADE */
+.tagline {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 1.3s;
+}
+
+/* BUTTONS – STAGGER */
+.cta-buttons a {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: btnPop 0.6s ease forwards;
+}
+
+.cta-buttons a:nth-child(1) { animation-delay: 1.7s; }
+.cta-buttons a:nth-child(2) { animation-delay: 1.9s; }
+.cta-buttons a:nth-child(3) { animation-delay: 2.1s; }
+.cta-buttons a:nth-child(4) { animation-delay: 2.3s; }
+
+@keyframes btnPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
