@@ -81,20 +81,47 @@ body {
 
 /* Hero Background Image URL */
 
-.background-overlay {
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background image behaves like CSS background */
+.hero-bg {
     position: absolute;
     inset: 0;
-
-    background: url('Bg.webp') no-repeat center center / cover;
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 1;
 
-    /* START: image invisible */
+    /* image invisible initially */
     opacity: 0;
 
-    /* smooth fade-in animation */
+    /* fade-in animation */
     animation: bgFadeIn 2s ease forwards;
 }
+
+/* Content stays above image */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animation */
+@keyframes bgFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* FADE IN KEYFRAMES */
 @keyframes bgFadeIn {
@@ -115,6 +142,12 @@ body {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;          /* vertical center */
+    justify-content: flex-start;  /* LEFT align */
+
+    padding-left: 5%;
 }
 
 
@@ -122,6 +155,9 @@ body {
     max-width: 800px;
     z-index: 5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    text-align: left;
+    margin: 0;                   /* 🔴 VERY IMPORTANT */
 }
 
 .greeting {
@@ -262,20 +298,63 @@ body {
 }
 
 /* Profile Image Styling (IMPORTANT: Replace 'your_profile_pic.jpg' with your image path) */
-.about-image {
-    flex: 1; 
-    height: 600px; 
-    max-width: 40%; 
-    background: 
-        linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 90%), 
-        url('pf.jpg') no-repeat center center/cover; 
-        
-    background-size: cover;
-    background-position: center top; 
-    border-radius: 8px; 
-    filter: grayscale(100%) brightness(0.8); 
-    transition: filter 0.5s ease; 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
+
+/* Image wrapper */
+.about-image {
+    position: relative;
+    flex: 1;
+    max-width: 40%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Actual image (HTML img behaves like background) */
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+    filter: grayscale(100%) brightness(0.8);
+    transition: filter 0.5s ease;
+}
+
+/* Gradient overlay (same as CSS background gradient) */
+.about-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.4) 50%,
+        transparent 90%
+    );
+    pointer-events: none;
+}
+
+/* Hover effect (optional but recommended) */
+.about-image:hover img {
+    filter: grayscale(0%) brightness(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        max-width: 100%;
+        height: 350px;
+    }
+}
+
 @media (max-width: 768px) {
 
   .about-section {
