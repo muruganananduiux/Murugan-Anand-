@@ -5,426 +5,334 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Murugan Anand | UI/UX Designer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
+    
+    <!-- PAGE LOADER -->
+    <div class="page-loader"></div>
 
+    <!-- NAVIGATION -->
     <header class="navbar">
-        <nav>
+        <div class="logo">MA</div>
+        <nav class="nav-menu">
             <a href="#home">Home</a>
             <a href="#about">About</a>  
             <a href="#resume">Resume</a> 
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="contact-info">
             <i class="fas fa-map-marker-alt"></i> Thane, India
         </div>
     </header>
 
+    <!-- HERO SECTION -->
     <section id="home" class="hero-section">
+        <img src="Bg.webp" alt="Background" class="hero-bg">
+        <div class="background-overlay"></div>
         <div class="hero-content">
             <p class="greeting">Hello, I am</p>
             <h1 class="full-name">MURUGAN ANAND</h1>
             <h2 class="tagline">UI/UX Designer crafting meaningful digital experiences</h2>
             
             <div class="cta-buttons">
-    <a href="https://www.behance.net/murugananand3" target="_blank" class="btn btn-primary">
-        View Portfolio
-    </a>
-    <a href="https://instagram.com/designbymurugan" target="_blank" class="btn-secondary">
-    <i class="fab fa-instagram"></i> Instagram
-</a>
-
-    <a href="https://www.linkedin.com/in/murugan-naidu-0135711bb?" target="_blank" class="btn btn-secondary social-btn">
+                <a href="https://www.behance.net/murugananand3" target="_blank" class="btn btn-primary">
+                    View Portfolio
+                </a>
+                <a href="https://instagram.com/designbymurugan" target="_blank" class="btn-secondary">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/murugan-naidu-0135711bb?" target="_blank" class="btn btn-secondary social-btn">
                     <i class="fab fa-linkedin-in"></i> LinkedIn
                 </a>
-
-    <!-- Working Download Button -->
-    <a href="Murugan Cv...pdf" download class="btn btn-secondary">
-        Download Resume
-    </a>
-</div>
+                <a href="Murugan Cv...pdf" download class="btn btn-secondary">
+                    Download Resume
+                </a>
+            </div>
         </div>
-        <div class="background-overlay"></div>
-         <img src="Bg.webp" alt="Hero Background" class="hero-bg">
-
     </section>
     
+    <!-- ABOUT SECTION -->
     <section id="about" class="about-section">
         <div class="about-content">
             <h2 class="section-title">ABOUT</h2>
             <p class="email-link">murugananand319@email.com</p> 
             
             <div class="about-description">
-                <p>I’m a passionate UI/UX Designer who believes that great design is a perfect blend of clarity, usability, and purpose. I focus on crafting user-centered mobile and web experiences that are intuitive, meaningful, and aesthetically clean.</p>
+                <p>I'm a passionate UI/UX Designer who believes that great design is a perfect blend of clarity, usability, and purpose. I focus on crafting user-centered mobile and web experiences that are intuitive, meaningful, and aesthetically clean.</p>
                 <p>I enjoy simplifying complex problems through structured research, thoughtful wireframes, and modern visual design. My process is guided by empathy, consistency, and detail-oriented thinking.</p>
                 <p>My goal is to build digital products that not only look beautiful, but also deliver real value to users and create long-term impact for businesses.</p>
             </div>
 
             <p class="address-info">old mumbai pune Street, Thane, 400604</p> 
             
-            
+            <div class="copyright-info">
+                &copy; Murugan Anand. All Rights Reserved.
             </div>
         </div>
-         <div class="about-image">
-      <img src="pf.jpg" alt="About Profile Image">
-      <div class="about-gradient"></div>
-    </div>
-        <div class="copyright-info">
-                &copy; Murugan Anand. All Rights Reserved.
-
-                
+        
+        <div class="about-image">
+            <img src="pf.jpg" alt="About Profile Image">
+            <div class="about-gradient"></div>
+        </div>
     </section>
 
+    <!-- RESUME SECTION -->
     <section id="resume" class="resume-section">
-    <h2 class="section-title">RESUME & SKILLS</h2>
+        <h2 class="section-title">RESUME & SKILLS</h2>
 
-    <div class="resume-grid">
-        
-        <div class="grid-column left-column">
+        <div class="resume-grid">
             
-            <div class="skill-group">
-                <h3>SOFTWARE SKILLS</h3>
-                <div class="skills-list">
-                    <div class="skill-item">Figma <span class="skill-level" data-level="80"></span></div>
-                    <div class="skill-item">Adobe XD <span class="skill-level" data-level="85"></span></div>
-                    <div class="skill-item">Photoshop <span class="skill-level" data-level="75"></span></div>
-                    <div class="skill-item">Illustrator <span class="skill-level" data-level="70"></span></div>
-                    <div class="skill-item">FigJam <span class="skill-level" data-level="80"></span></div>
-                    <div class="skill-item">Canva <span class="skill-level" data-level="65"></span></div>
-                    <div class="skill-item">Framer <span class="skill-level" data-level="80"></span></div>
-                    <div class="skill-item">Picsart <span class="skill-level" data-level="75"></span></div>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <h3>LANGUAGES</h3>
-                <div class="skills-list">
-                    <div class="skill-item">English <span class="skill-level" data-level="80"></span></div>
-                    <div class="skill-item">Hindi <span class="skill-level" data-level="90"></span></div>
-                    <div class="skill-item">Marathi <span class="skill-level" data-level="70"></span></div>
-                    <div class="skill-item">Tamil <span class="skill-level" data-level="50"></span></div>
-                    <div class="skill-item">Telugu <span class="skill-level" data-level="50"></span></div>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <h3>PERSONAL SKILLS</h3>
-                <div class="personal-skills-list">
-                    <span>Creativity</span>
-                    <span>Communication</span>
-                    <span>Problem Solving</span>
-                    <span>Teamwork</span>
-                    <span>Time Management</span>
-                    <span>Attention to Detail</span>
-                </div>
-            </div>
-            
-        </div> <div class="grid-column middle-column">
-            <h3>PROJECTS</h3>
-            <div class="project-item">
-                <h4>HARA HACHI BU – Herbal Tea Brand App (UX Case Study)</h4>
-                <p class="role-duration">Role: UI/UX Designer | Duration: 3 Weeks</p>
-                <p class="tools">Tools: Figma</p>
-                <p class="project-overview">Hara Hachi Bu is a premium herbal tea brand whose goal was to provide users with a healthy lifestyle along with a tea shopping experience. I designed a seamless mobile app where users can easily explore, compare, and purchase teas. The entire experience was given a minimalist, modern, and brand-centric feel.</p>
+            <!-- LEFT COLUMN -->
+            <div class="grid-column left-column">
                 
-                <h5 class="sub-heading">My Responsibilities:</h5>
-                <ul>
-                    <li>User interviews & competitor research</li>
-                    <li>Persona creation & user journey mapping</li>
-                    <li>App information architecture design</li>
-                    <li>Low-fidelity → high-fidelity wireframes</li>
-                    <li>UI design with brand styling</li>
-                    <li>Usability testing & final prototype</li>
-                </ul>
+                <div class="skill-group">
+                    <h3>SOFTWARE SKILLS</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">Figma (Auto Layout, Components, Prototyping) <span class="skill-level" data-level="80"></span></div>
+                        <div class="skill-item">FigJam (User Flows, IA) <span class="skill-level" data-level="85"></span></div>
+                        <div class="skill-item">Photoshop <span class="skill-level" data-level="75"></span></div>
+                        <div class="skill-item">Adobe XD<span class="skill-level" data-level="70"></span></div>
+                        <div class="skill-item">Framer <span class="skill-level" data-level="80"></span></div>
+                        <div class="skill-item">Sketch <span class="skill-level" data-level="65"></span></div>
+                    </div>
+                </div>
 
-                <h5 class="sub-heading">Key Features Designed:</h5>
-                <ul>
-                    <li>Smart Tea Recommendation (based on health goals)</li>
-                    <li>One-tap Reorder</li>
-                    <li>Tea Brewing Timer</li>
-                    <li>Rewards & Subscription Section</li>
-                    <li>Clean, modern product detail screens</li>
-                </ul>
+                <div class="skill-group">
+                    <h3>LANGUAGES</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">English <span class="skill-level" data-level="80"></span></div>
+                        <div class="skill-item">Hindi <span class="skill-level" data-level="90"></span></div>
+                        <div class="skill-item">Marathi <span class="skill-level" data-level="70"></span></div>
+                        <div class="skill-item">Tamil <span class="skill-level" data-level="50"></span></div>
+                        <div class="skill-item">Telugu <span class="skill-level" data-level="50"></span></div>
+                    </div>
+                </div>
 
-                <h5 class="sub-heading">Impact:</h5>
-                <ul>
-                    <li>Purchase flow made 40% faster</li>
-                    <li>Brand trust enhanced through clean UI</li>
-                    <li>Clear visual hierarchy = Better user engagement</li>
-                </ul>
+                <div class="skill-group">
+                    <h3>PERSONAL SKILLS</h3>
+                    <div class="personal-skills-list">
+                        <span>User-centric Problem Solving</span>
+                        <span>Design Thinking</span>
+                        <span>Clear Design Communication</span>
+                        <span>Requirement Understanding</span>
+                        <span>Feedback-Driven Iteration</span>
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="education-group">
-                <h3>EDUCATION</h3>
-                <p><strong>UI/UX Design Certification</strong> — Felix IT Institute (2025)</p>
-                <p><strong>ITI Vocational Training</strong></p>
-                <p><strong>Higher Secondary Education</strong></p>
-            </div>
-        </div> <div class="grid-column right-column">
-            
-            <div class="ability-group">
-                <h3>WHAT CAN I DO?</h3>
-                <ul class="can-do-list">
-                    <li>Mobile App UI</li>
-                    <li>Website UI/UX</li>
-                    <li>Landing Page Design</li>
-                    <li>Dashboard Design</li>
-                    <li>Wireframes</li>
-                    <li>Prototyping</li>
-                    <li>UX Case Studies</li>
-                    <li>Design System</li>
-                </ul>
-            </div>
+            <!-- MIDDLE COLUMN -->
+            <div class="grid-column middle-column">
+                <h3>PROFESSIONAL SUMMARYs</h3>
+                <div class="project-item">
+                    <p class="project-overview">UI/UX Designer with hands-on experience designing responsive web and mobile interfaces using Figma and user-centered design principles. Skilled in translating UI designs into clean, responsive front-end code using HTML5 and CSS3. Experienced in using AI-assisted tools such as Figma AI, Galileo, Uizard, and ChatGPT to accelerate design workflows, improve usability, and support data-driven design decisions. Strong understanding of UX research, wireframing, prototyping, accessibility (WCAG basics), and developer-ready handoff..</p>
+                    
+                    
 
-            <div class="ability-group">
-                <h3>DESIGN SKILLS</h3>
-                <ul class="design-skills-list">
-                    <li>User Interface Design</li>
-                    <li>User Experience Design</li>
-                    <li>Wireframing & Prototyping</li>
-                    <li>UX Research</li>
-                    <li>Visual Design</li>
-                    <li>Interaction Design</li>
-                    <li>Usability Test</li>
-                    <li>Style Guide / Design System</li>
-                </ul>
-            </div>
-
-            <div class="hobbies-group">
-                <h3>HOBBIES & INTERESTS</h3>
-                <div class="hobbies-grid">
-                    <div><i class="fas fa-music"></i> Music</div>
-                    <div><i class="fas fa-gamepad"></i> Gaming</div>
-                    <div><i class="fas fa-plane-departure"></i> Travelling</div>
-                    <div><i class="fas fa-camera-retro"></i> Photography</div>
+                <div class="education-group">
+                    <h3>EDUCATION</h3>
+                    <p><strong>UI/UX Design Certification</strong> — Felix IT Institute (2025)</p>
+                    <p><strong>ITI Vocational Training</strong></p>
+                    <p><strong>Higher Secondary Education</strong></p>
                 </div>
             </div>
-        </div> </div>
-</section>
+
+            <!-- RIGHT COLUMN -->
+            <div class="grid-column right-column">
+                
+                <div class="ability-group">
+                    <h3>WHAT CAN I DO?</h3>
+                    <ul class="can-do-list">
+                        <li>Mobile App UI/UX Design</li>
+                        <li>Responsive Website UI Design</li>
+                        <li>Landing Page Design</li>
+                        <li>UX Research & User Flows</li>
+                        <li>Design Systems & UI Kits</li>
+                        <li>Prototyping</li>
+                        <li>UX Case Studies</li>
+                        <li>Developer-ready Handoff</li>
+                    </ul>
+                </div>
+
+                <div class="ability-group">
+                    <h3>DESIGN SKILLS</h3>
+                    <ul class="design-skills-list">
+                        <li>User Interface Design</li>
+                        <li>User Experience Design</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>UX Research</li>
+                        <li>Visual Design</li>
+                        <li>Interaction Design</li>
+                        <li>Usability Test</li>
+                        <li>Style Guide / Design System</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies-group">
+                    <h3>HOBBIES & INTERESTS</h3>
+                    <div class="hobbies-grid">
+                        <div><i class="fas fa-music"></i> Music</div>
+                        <div><i class="fas fa-gamepad"></i> Gaming</div>
+                        <div><i class="fas fa-plane-departure"></i> Travelling</div>
+                        <div><i class="fas fa-camera-retro"></i> Photography</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio-section">
         <h2 class="section-title">MY WORK & PROJECTS</h2>
         <p class="portfolio-tagline">A selection of my best UI/UX Case Studies and Design Prototypes.</p>
 
-       <div class="behance-link-container">
-    <a href="https://www.behance.net/murugananand3" 
-       target="_blank" 
-       class="behance-link">
-        View All Projects on Behance
-    </a>
-</div>
-
-
- <!-- PROJECTS SECTION -->
-<section id="projects" class="projects-section">
-    <div class="projects-grid">
-
-        <!-- Project 5 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="mra.png" alt="MRA Business Website">
-            </div>
-
-            <h3>MRA – Business Website UI/UX & Front-End Designer</h3>
-
-            <p class="project-meta">
-                Tools: HTML • CSS • JavaScript | Category: Front-End
-            </p>
-
-            <p class="project-status">
-                <strong>Status:</strong> Going live on January 1
-            </p>
-
-            <p class="project-description">
-                Responsive business website designed and developed with clean UI and modern front-end.
-            </p>
-
-            <a href="https://muruganananduiux.github.io/MRA-/" class="view-case-study">
-                View Live Preview <i class="fas fa-arrow-right"></i>
+        <div class="behance-link-container">
+            <a href="https://www.behance.net/murugananand3" target="_blank" class="behance-link">
+                View All Projects on Behance 
             </a>
         </div>
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="hh.jpg" alt="Hara Hachi Bu App">
+        <!-- PROJECTS GRID -->
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="mra.png" alt="MRA Business Website">
+                </div>
+                <h3>MRA – Business Website UI/UX & Front-End Designer</h3>
+                <p class="project-meta">Tools: HTML • CSS • JavaScript | Category: Front-End</p>
+                <p class="project-status"><strong>Status:</strong> Going live on January 1</p>
+                <p class="project-description">Responsive business website designed and developed with clean UI and modern front-end.</p>
+                <a href="https://muruganananduiux.github.io/MRA-/" class="view-case-study">
+                    View Live Preview <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <h3>Hara Hachi Bu – Herbal Wellness App</h3>
-
-            <p class="project-meta">
-                Tools: Figma | Category: Wellness Mobile App
-            </p>
-
-            <p class="project-description">
-                A clean and simple wellness app designed to help users choose herbal teas...
-            </p>
-
-            <a href="https://www.behance.net/gallery/237797623/HARA-HACHI-BU-Herbal-Wellness-App-UIUX-Design" class="view-case-study">
-                View Case Study <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="pp.jpg" alt="NutriEase App">
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="hh.jpg" alt="Hara Hachi Bu App">
+                </div>
+                <h3>Hara Hachi Bu – Herbal Wellness App</h3>
+                <p class="project-meta">Tools: Figma | Category: Wellness Mobile App</p>
+                <p class="project-description">A clean and simple wellness app designed to help users choose herbal teas...</p>
+                <a href="https://www.behance.net/gallery/237797623/HARA-HACHI-BU-Herbal-Wellness-App-UIUX-Design" class="view-case-study">
+                    View Case Study <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <h3>NutriEase – Fitness & Nutrition App</h3>
-
-            <p class="project-meta">
-                Tools: Figma | Category: Fitness Tracker
-            </p>
-
-            <p class="project-description">
-                A modern fitness tracking app that helps users monitor daily activity...
-            </p>
-
-            <a href="https://www.behance.net/gallery/237364883/NutriEase-Smart-Nutrition-Fitness-App-Design" class="view-case-study">
-                View Case Study <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="oo.jpg" alt="OnlineShop App">
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="pp.jpg" alt="NutriEase App">
+                </div>
+                <h3>NutriEase – Fitness & Nutrition App</h3>
+                <p class="project-meta">Tools: Figma | Category: Fitness Tracker</p>
+                <p class="project-description">A modern fitness tracking app that helps users monitor daily activity...</p>
+                <a href="https://www.behance.net/gallery/237364883/NutriEase-Smart-Nutrition-Fitness-App-Design" class="view-case-study">
+                    View Case Study <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <h3>OnlineShop – E-Commerce Mobile App</h3>
-
-            <p class="project-meta">
-                Tools: Figma, Adobe XD | Category: E-commerce
-            </p>
-
-            <p class="project-description">
-                An e-commerce mobile app with a smooth shopping experience...
-            </p>
-
-            <a href="https://www.behance.net/gallery/237295085/Onlineshop-E-commerce-App-Design" class="view-case-study">
-                View Case Study <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="vian.png" alt="Vian Jewellery Website">
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="oo.jpg" alt="OnlineShop App">
+                </div>
+                <h3>OnlineShop – E-Commerce Mobile App</h3>
+                <p class="project-meta">Tools: Figma, Adobe XD | Category: E-commerce</p>
+                <p class="project-description">An e-commerce mobile app with a smooth shopping experience...</p>
+                <a href="https://www.behance.net/gallery/237295085/Onlineshop-E-commerce-App-Design" class="view-case-study">
+                    View Case Study <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <h3>Vian Jewellery – Luxury Website UI (Front-End Mini Project)</h3>
-
-            <p class="project-meta">
-                Tools: HTML • CSS • JavaScript | Category: Front-End Practice
-            </p>
-
-            <p class="project-description">
-                A personal front-end practice project made with HTML, CSS, and JS to improve responsive design and UI detailing.
-            </p>
-
-            <a href="https://muruganananduiux.github.io/vian-jewellery/" class="view-case-study">
-                View Live Preview <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="paisa.png" alt="PaisaPlan Finance Tracker">
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="vian.png" alt="Vian Jewellery Website">
+                </div>
+                <h3>Vian Jewellery – Luxury Website UI (Front-End Mini Project)</h3>
+                <p class="project-meta">Tools: HTML • CSS • JavaScript | Category: Front-End Practice</p>
+                <p class="project-description">A personal front-end practice project made with HTML, CSS, and JS to improve responsive design and UI detailing.</p>
+                <a href="https://muruganananduiux.github.io/vian-jewellery/" class="view-case-study">
+                    View Live Preview <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <h3>PaisaPlan – Personal Finance Tracking Website</h3>
-
-            <p class="project-meta">
-                Tools: Figma | Category: Finance / UX Concept
-            </p>
-
-            <p class="project-description">
-                A personal finance tracking website designed to help users manage expenses and savings with a clean and simple UI.
-            </p>
-             <p class="project-status">
-        <strong>Case Study:</strong> In progress (will be published on Behance)
-    </p>
-
-            <a href="https://www.behance.net/murugananand3" class="view-case-study">
-                View Case Study <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-
-         <!-- Project 7 -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <img src="expat 1.png" alt="ExpatEase Finance App UI UX Case Study">
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="paisa.png" alt="PaisaPlan Finance Tracker">
+                </div>
+                <h3>PaisaPlan – Personal Finance Tracking Website</h3>
+                <p class="project-meta">Tools: Figma | Category: Finance / UX Concept</p>
+                <p class="project-description">A personal finance tracking website designed to help users manage expenses and savings with a clean and simple UI.</p>
+                <p class="project-status"><strong>Case Study:</strong> In progress (will be published on Behance)</p>
+                <a href="https://www.behance.net/murugananand3" class="view-case-study">
+                    View Case Study <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <h3>ExpatEase – Finance App for Expat Workers</h3>
+            <!-- Project 7 -->
+            <div class="project-card">
+                <div class="project-image-placeholder">
+                    <img src="expat 1.png" alt="ExpatEase Finance App UI UX Case Study">
+                </div>
+                <h3>ExpatEase – Finance App for Expat Workers</h3>
+                <p class="project-meta">Tools: Figma | Category: Finance / UX Concept</p>
+                <p class="project-description">ExpatEase is a concept-based finance app designed for expat workers to manage salary, track expenses, send money home, split shared bills, and handle cash-based transactions. The project focuses on simplicity, financial control, and a secure user experience.</p>
+                <p class="project-status"><strong>Case Study:</strong> In progress (will be published on Behance)</p>
+                <a href="https://www.behance.net/murugananand3" class="view-case-study">
+                    View Case Study <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
 
-            <p class="project-meta">
-                Tools: Figma | Category: Finance / UX Concept
-            </p>
+        </div>
+    </section>
 
-            <p class="project-description">
-                ExpatEase is a concept-based finance app designed for expat workers to manage salary, 
-        track expenses, send money home, split shared bills, and handle cash-based transactions.
-        The project focuses on simplicity, financial control, and a secure user experience.
-            </p>
-             <p class="project-status">
-        <strong>Case Study:</strong> In progress (will be published on Behance)
-    </p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <p class="contact-tagline">I'm always open to discussing new projects, design opportunities, or creative ideas.</p>
 
-            <a href="https://www.behance.net/murugananand3" class="view-case-study">
-                View Case Study <i class="fas fa-arrow-right"></i>
+        <div class="contact-details-grid">
+            <a href="tel:+919653643932" class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <h3>CALL ME</h3>
+                <p>+91 96536 43932</p>
             </a>
+
+            <a href="mailto:murugananand319@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>EMAIL ME</h3>
+                <p>murugananand319@gmail.com</p>
+            </a>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>ADDRESS</h3>
+                <p>Maharashtra, India</p>
+            </div>
         </div>
 
-    </div> <!-- ✅ projects-grid CLOSE -->
-</section> <!-- ✅ projects section CLOSE -->
-
-
-<!-- CONTACT SECTION (SEPARATE PAGE FEEL) -->
-<section id="contact" class="contact-section">
-    <h2 class="section-title">GET IN TOUCH</h2>
-    <p class="contact-tagline">
-        I'm always open to discussing new projects, design opportunities, or creative ideas.
-    </p>
-
-    <div class="contact-details-grid">
-        <a href="tel:+919653643932" class="contact-item">
-            <i class="fas fa-phone-alt"></i>
-            <h3>CALL ME</h3>
-            <p>+91 96536 43932</p>
-        </a>
-
-        <a href="mailto:murugananand319@gmail.com" class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <h3>EMAIL ME</h3>
-            <p>murugananand319@gmail.com</p>
-        </a>
-
-        <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>ADDRESS</h3>
-            <p>Maharashtra, India</p>
+        <div class="contact-form">
+            <form action="https://wa.me/919653643932" method="get" target="_blank">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+            </form>
         </div>
-    </div>
+    </section>
 
-    <div class="contact-form">
-        <form action="https://wa.me/919653643932" method="get" target="_blank">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">
-                SEND MESSAGE
-            </button>
-        </form>
-    </div>
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
