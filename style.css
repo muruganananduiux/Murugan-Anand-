@@ -583,3 +583,32 @@ footer {
     .cta-group { flex-direction: column; }
     .btn { text-align: center; }
 }
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .contact-links a {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
