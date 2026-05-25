@@ -612,3 +612,49 @@ footer {
         box-sizing: border-box;
     }
 }
+/* Internship Projects */
+.internship-section {
+    padding: 100px 8%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollProjects 25s linear infinite;
+}
+
+.slider-track span {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 16px 28px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.slider-track span:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+@keyframes scrollProjects {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
